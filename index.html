@@ -27,6 +27,62 @@
 	    padding-left: 20px;
 	    padding-right: 20px;
 	}
+		
+		* {
+    box-sizing: border-box;
+}
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
 	</style>
 	<body class="is-preload">
 
@@ -110,9 +166,15 @@
 
 						<!-- About -->
 							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<h2 class="major">Game Collection</h2>
+								<div class="columns">
+								  <ul class="price">
+								    <li class="header"><img src="https://i.ytimg.com/vi/AkGVNR36XWU/maxresdefault.jpg" width=100%></img></li>
+								    <li class="grey">$ 7.99 / month</li>
+								    <li class="grey"><a href="#" class="button">Rent Now</a></li>
+								  </ul>
+								</div>
+
 							</article>
 
 						<!-- Contact -->
